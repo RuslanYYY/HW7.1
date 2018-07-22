@@ -1,8 +1,6 @@
 package com.company;
 
 
-
-
 public class Main {
     public static void main(String[] args) {
 
@@ -16,9 +14,6 @@ public class Main {
         System.out.println("List: " + list);
         list.remove(3);
         System.out.println("List: " + list);
-
-
-
 
 
     }

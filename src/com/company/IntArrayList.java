@@ -65,7 +65,6 @@ public class IntArrayList<E> implements IntList<E> {
     }
 
 
-
     @Override
     public void set(int index, E e) {
         checkIndex(index);
@@ -74,7 +73,7 @@ public class IntArrayList<E> implements IntList<E> {
 
     @Override
     public boolean contains(E e) {
-        for (int i = 0; i < size; i++) {
+        for ( int i = 0; i < size; i++ ) {
             if (e.equals(array[i])) {
                 return true;
             }
@@ -94,7 +93,6 @@ public class IntArrayList<E> implements IntList<E> {
     }
 
 
-
     @Override
     public boolean remove(int index) {
         checkIndex(index);
@@ -106,7 +104,7 @@ public class IntArrayList<E> implements IntList<E> {
 
     @Override
     public boolean removeElement(E e) {
-        for (int i = 0; i < size; i++) {
+        for ( int i = 0; i < size; i++ ) {
             if (e.equals(array[i])) {
                 System.arraycopy(array, i + 1, array, i, size - i - 1);
                 size--;
@@ -117,7 +115,7 @@ public class IntArrayList<E> implements IntList<E> {
     }
 
     @Override
-    public String toString () {
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for ( int i = 0; i < size; i++ ) {
